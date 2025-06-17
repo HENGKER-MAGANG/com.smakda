@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php'; checkRole('sekretaris');
 include('../partials/anggota/navbar.php');
 $headerGradient = 'linear-gradient(135deg,#0d9488,#14b8a6)'; // hijau toska

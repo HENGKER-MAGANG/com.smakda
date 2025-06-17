@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php';
 checkRole('ketua');
 include('../partials/anggota/navbar.php');

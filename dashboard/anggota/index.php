@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php'; checkRole('anggota');
 include('../partials/anggota/navbar.php');
 $headerGradient = 'linear-gradient(135deg,#2563eb,#0ea5e9)';

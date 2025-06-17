@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php';
 checkRole('anggota'); // hanya role anggota
 include('../partials/anggota/navbar.php');

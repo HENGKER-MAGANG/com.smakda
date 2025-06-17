@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php'; checkRole('bendahara');
 include('../partials/anggota/navbar.php');
 $headerGradient = 'linear-gradient(135deg,#16a34a,#22c55e)'; // hijau uang

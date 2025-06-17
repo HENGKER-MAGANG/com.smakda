@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../../config/db.php';
 require '../auth/auth_guard.php'; 
 checkRole('ketua');

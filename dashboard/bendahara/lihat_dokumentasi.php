@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../auth/auth_guard.php';
 checkRole('bendahara');
 include('../partials/anggota/navbar.php');
