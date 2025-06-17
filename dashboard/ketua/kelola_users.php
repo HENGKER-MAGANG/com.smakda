@@ -64,8 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_user'])) {
   exit;
 }
 
-
-// Validasi user
+// Verifikasi user baru
 if (isset($_GET['verifikasi'])) {
   $id = $_GET['verifikasi'];
   $stmt = $db->prepare("UPDATE users SET status = 'Aktif' WHERE id = ?");
@@ -75,6 +74,7 @@ if (isset($_GET['verifikasi'])) {
   exit;
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="id">
