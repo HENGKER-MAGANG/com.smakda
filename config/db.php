@@ -1,12 +1,14 @@
 <?php
-$host = getenv('DB_HOST') ?: 'bo0sw48s8ks0w4c00os8ogo4';
-$user = getenv('DB_USER') ?: 'com';
-$pass = getenv('DB_PASS') ?: 'comsmakda';
-$db   = getenv('DB_NAME') ?: 'com_db';
+// config/db.php
 
-$conn = new mysqli($host, $user, $pass, $db);
+$host     = 'bo0sw48s8ks0w4c00os8ogo4'; // dari MySQL URL internal di Coolify
+$dbname   = 'com_db';                   // Initial Database
+$username = 'com';                      // Normal User
+$password = 'comsmakda';               // Normal User Password
 
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
+try {
+    $db = new PDO("mysql:host=$host;port=3306;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Koneksi database gagal: " . $e->getMessage());
 }
-?>
