@@ -4,12 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 
-<nav class="bg-gray-900 border-b border-green-500 shadow-md">
+<nav class="bg-[#0f172a] border-b border-blue-500 shadow-md">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
+      
       <!-- Brand -->
-      <div class="flex-shrink-0 text-green-400 font-bold text-lg sm:text-xl">
-        💰 COM SMAKDA - <?= ucwords($_SESSION['user']['role'] ?? 'User'); ?>
+      <div class="flex-shrink-0 text-blue-400 font-bold text-lg sm:text-xl">
+        💼 COM SMAKDA - <?= ucwords($_SESSION['user']['role'] ?? 'User'); ?>
       </div>
 
       <!-- Desktop Menu -->
@@ -21,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-green-400 focus:outline-none">
+        <button id="mobile-menu-button" class="text-blue-400 focus:outline-none">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
                viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"

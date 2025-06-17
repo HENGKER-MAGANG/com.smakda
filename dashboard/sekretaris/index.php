@@ -1,7 +1,7 @@
 <?php
 session_start();
 require '../auth/auth_guard.php'; checkRole('sekretaris');
-include('../partials/anggota/navbar.php');
+include('../partials/navbar.php');
 $headerGradient = 'linear-gradient(135deg,#0d9488,#14b8a6)'; // hijau toska
 $welcomeName = ucwords($_SESSION['user']['username']);
 $role = 'sekretaris';
@@ -13,4 +13,4 @@ $cards = [
   [ 'title' => 'Lihat Users', 'href' => 'lihat_users.php'],
   [ 'title' => 'Lihat Kas', 'href' => 'lihat_kas.php'],
 ];
-include('../partials/anggota/dashboard.php');
+include('../partials/dashboard.php');

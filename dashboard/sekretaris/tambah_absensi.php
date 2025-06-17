@@ -2,7 +2,7 @@
 session_start();
 require '../auth/auth_guard.php';
 checkRole('sekretaris');
-include('../partials/anggota/navbar.php');
+include('../partials/navbar.php');
 require '../../config/db.php';
 
 $users = $db->query("SELECT username, role FROM users ORDER BY username ASC")->fetchAll(PDO::FETCH_ASSOC);

@@ -2,7 +2,7 @@
 session_start();
 require '../auth/auth_guard.php';
 checkRole('ketua');
-include('../partials/anggota/navbar.php');
+include('../partials/navbar.php');
 require '../../config/db.php';
 
 // === TAMBAH AGENDA ===
