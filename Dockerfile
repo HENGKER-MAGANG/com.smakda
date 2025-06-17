@@ -1,8 +1,8 @@
 # Base image PHP + Apache
 FROM php:8.2-apache
 
-# Install ekstensi PHP yang dibutuhkan
-RUN docker-php-ext-install mysqli
+# Install ekstensi PHP yang dibutuhkan: pdo, pdo_mysql, dan mysqli
+RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # Salin semua file ke dalam folder web server
 COPY . /var/www/html/
@@ -15,4 +15,3 @@ RUN a2enmod rewrite
 
 # Port default Apache
 EXPOSE 80
-
