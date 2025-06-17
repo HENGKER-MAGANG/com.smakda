@@ -13,4 +13,4 @@ $cards = [
   [ 'title' => 'Lihat Agenda', 'href' => 'lihat_agenda.php'],
   [ 'title' => 'Lihat Dokumentasi', 'href' => 'lihat_dokumentasi.php'],
 ];
-include('../partial/dashboard.php');
+include('../partials/dashboard.php');
