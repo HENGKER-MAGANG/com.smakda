@@ -1,0 +1,75 @@
+Halo, apa kabar chatgpt!
+
+Gua punya sebuah project website untuk sebuah organisasi sekolah dari SMKN 2 Pinrang yang bernama COM (Community Programmer).
+
+Website ini adalah website dengan style modern dan minimalis.
+
+Website ini responsif untuk segala jenis ukuran device dan juga memiliki animasi interaktif yang lumayan banyak.
+
+Website ini bagusnya dibuat dengan HTML 5 dan Tailwind CSS
+
+Website ini memiliki database yang bernama comsmakda_db
+
+comsmakda_db memiliki tabel users, kas, dokumentasi, projects, agenda, komentar, dan absensi
+
+Website ini punya 2 jenis halaman yaitu public dan role.
+
+Public adalah halaman yang tersedia untuk orang yang belum registrasi sedangkan Role adalah halaman orang yang sudah registrasi dan harus login untuk mengakses halamannya.
+
+Halaman Dashboard ada beberapa role yaitu ketua, sekretaris, bendahara, dan anggota
+
+Halaman Public yang bisa disebut index berisi beberapa section, yaitu :
+# Bagian Header
+    1. Navbar -> untuk navigation bar
+    2. Hero -> untuk tagline atau informasi umum tentang organisasi
+# Bagian Content
+    3. Tentang COM -> untuk menampilkan mengenai apa itu organisasi COM 
+    4. Kenapa Gabung -> untuk menampilkan card yang berisi alasan bergabung ke organisasi COM
+    5. Sejarah COM -> untuk menampilkan sejarah terbentuknya organisasi COM dari sekolah SMKN 2 Pinrang
+    6. Projects -> untuk menampilkan card yang berisi mengenai project - project website yang pernah dibuat oleh COM
+    7. Dokumentasi -> untuk menampilkan card gambar beberapa kegiatan yang telah dilakukan COM
+    8. Komentar -> berisi form untuk memberi komentar, kritikan, atau saran untuk organisasi COM
+    9. Maps -> berisi tentang lokasi tempat organisasi COM (6J5R+J2G, Jl. Kesehatan, Penrang, Kec. Watang Sawitto, Kabupaten Pinrang, Sulawesi Selatan 91218)
+# Bagian Footer
+    10. Footer -> untuk menampilkan copyright maupun link sosial media dari COM dan SMKN 2 Pinrang
+
+Ada juga halaman untuk registrasi dan login untuk bisa masuk ke halaman dashboard dengan role - role tertentu
+
+Halaman Dashboard yang bisa disebut index berisi beberapa section, yaitu :
+# Bagian Header
+    1. Navbar -> untuk navigation bar
+# Bagian Content
+    1. Banner -> untuk menampilkan sapaan pada user sekaligus rolw nya masing masing
+    2. Aktivitas -> berisi card yang dapat ke halaman lain untuk melakukan sesuatu seperti mengelola kas, mengelola absensi, dan lain lain (akan kujelaskan nanti)
+
+Card Fitur / Aktivitas untuk saat ini pada dashboard:
+Anggota : 1. Lihat kas
+          2. Lihat Absensi
+          3. Lihat Agenda
+          4. Lihat Projects
+          5. Lihat Dokumentasi
+          6. Lihat Users
+
+Bendahara : 1. Kelola kas
+            2. Lihat Absensi
+            3. Lihat Agenda
+            4. Lihat Projects
+            5. Lihat Dokumentasi
+            6. Lihat Users
+
+Sekretaris : 1. Kelola Absensi
+             2. Kelola Agenda
+             3. Kelola Dokumentasi
+             4. Lihat kas
+             5. Lihat Projects
+             6. Lihat Users
+
+Ketua : 1. Kelola Projects
+        2. Kelola Users
+        3. Kelola kas
+        4. Kelola Absensi
+        5. Kelola Agenda
+        6. Kelola Dokumentasi
+        7. Buat Sertifikat
+        8. Import PDF/EXCEL
+        9. Export PDF/EXCEL
